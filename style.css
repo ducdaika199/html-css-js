@@ -231,4 +231,48 @@ body {
 
 .product_price {
   font-weight: 700;
+  margin: 20px 0;
+}
+
+.product_desc {
+  color: gray;
+}
+
+.product_colors {
+  display: flex;
+  margin: 20px 0;
+}
+
+.color {
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.color:last-child {
+  background-color: blue;
+}
+
+.product_sizes {
+  display: flex;
+  margin: 20px 0;
+}
+
+.size {
+  cursor: pointer;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.product_btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
