@@ -74,8 +74,8 @@ body {
 
 .slider {
   background: url("https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   overflow: hidden;
 }
 

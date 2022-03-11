@@ -85,7 +85,8 @@ let chosenProduct = products[0];
 const currentProductImg = document.querySelector(".product_img");
 const currentProductTitle = document.querySelector(".product_title");
 const currentProductPrice = document.querySelector(".product_price");
-const currentProductDescription = document.querySelector(".product_desc");
+const currentProductSizes = document.querySelectorAll(".product_sizes");
+const currentProductColor = document.querySelectorAll(".product_colors");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -93,5 +94,12 @@ menuItems.forEach((item, index) => {
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
     // change the choosen product
     chosenProduct = products[index];
+    // change the details products
+    currentProductTitle.textContent = chosenProduct.title;
+    currentProductPrice.textContent = `$` + chosenProduct.price;
+    currentProductImg.src = chosenProduct.colors[0].img;
+    currentProductColor.forEach((color, index) => {
+      color.style.backgroundColor = chosenProduct.colors[index].code;
+    });
   });
 });
